@@ -28,5 +28,5 @@ function numeralSum(number) {
 
   return Math.abs(res);
 }
-
+numeralSum(1010);
 module.exports.numeralSum = numeralSum;
