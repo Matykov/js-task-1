@@ -17,11 +17,12 @@ function numeralSum(number) {
   }
 
   let res = 0;
-  let tmp = number + '';
+  let tmp = number.toString();
 
   for(let i=0; i < tmp.length; i++){
-    if(!isNaN(tmp.charAt(i))){
-      res += parseInt(tmp.charAt(i));
+    let symb = tmp.charAt(i);
+    if(!isNaN(symb)){
+      res += parseInt(symb);
     }
   }
 
